@@ -35,6 +35,7 @@
 
 * Android
 
+  * 将最新版本的cds-android-agent-cdp以及对应依赖的protobuf-lite、gmonitor替换Assets/Plugins/Android目录下对应文件
   * 将Assets/Plugins/Android 下内容以及Assets/Sources 内容拷贝到对应工程目录下
   * 在Assets/Plugins/Android/AndroidManifest.xml中配置对应项目的url scheme
   * 在Assets/Sources/com/growingio/demo/App.java中配置对应启动配置
@@ -44,7 +45,7 @@
 
 * iOS
 
-  * 将最新版本的GrowingCDPCoreKit.framework和Growing.h放入Assets/Plugins/iOS目录下
+  * 将最新版本的GrowingCDPCoreKit.framework和Growing.h替换Assets/Plugins/iOS目录下对应文件
 
   * 将Assets/Plugins/iOS/GrowingIOHelper.mm 放入对应工程目录
 
