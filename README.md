@@ -2,6 +2,11 @@
 
 * GrowingIO Unity平台埋点SDK集成Demo(基于Unity2019.4)
 
+#### 测试
+
+* Android.apk为导出demo
+* iOS中为导出demo的Xcode工程
+
 #### API列表
 
 * Track: 发送自定义事件, 对应于cstm事件

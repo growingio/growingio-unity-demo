@@ -3,8 +3,8 @@
     "m_SelectedPackage": {
         "deviceId": "emulator-5554",
         "name": "com.growingio.demo",
-        "processId": 1421,
-        "exited": false
+        "processId": 2872,
+        "exited": true
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
@@ -25,6 +25,12 @@
             "name": "com.growingio.demo",
             "processId": 1421,
             "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.growingio.demo",
+            "processId": 2872,
+            "exited": true
         }
     ],
     "m_Tags": {
