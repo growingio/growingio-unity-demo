@@ -1,4 +1,4 @@
-### growing-unity-demo
+### growing-unity-sdk
 
 * GrowingIO Unity平台埋点SDK集成Demo(基于Unity2019.4)
 
