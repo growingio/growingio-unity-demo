@@ -350,6 +350,7 @@ extern "C" void UnityCleanupTrampoline()
     [Growing startWithAccountId:@"91eaf9b283361032" dataSourceId:@"b4a2b38a79d4a25f"];
     [Growing setTrackerHost:@"uat-api.growingio.com"];
     [Growing setEnableLog:YES];
+    [Growing setFlushInterval:0];
 
     return YES;
 }

@@ -36,6 +36,12 @@
   public static void ClearUserId()
   ```
 
+* SetUserAttributes: 发送一个自定义的用户事件
+
+  ```c#
+  public static void SetUserAttributes(Dictionary<string, object> var)
+  ```
+
 #### 集成步骤
 
 * Android

@@ -815,6 +815,7 @@ IL2CPP_EXTERN_C const uint32_t CharacterSelectionEvent__ctor_mE2C306B8090F902612
 IL2CPP_EXTERN_C const uint32_t ChatController_AddToChatOutput_m5E6DF0E37CB2E9FBBEACCB6EEE6452AB14BBE94C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ChatController_OnDisable_m49C4A6501BCC216F924B3C37F243D1B5B54A69FF_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ChatController_OnEnable_m168B1E78BFA288F42D4AE0A8F1424B8D68B07993_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t ClickEvent_click_Set_User_Attributes_mB9B03E3BC9297DEEDE08D59F36424FA13E66A539_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ClickEvent_click_Set_User_Id_mC33FD437D64E2B48E95627DB58565F1BC494A848_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ClickEvent_click_Track_Page_String_Dic_m154ABC634CB579F7DE80E7693C776048165BDEF3_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ClickEvent_click_Track_Page_String_mF25FD0AF04263216C28F6D610051A18873C0C110_MetadataUsageId;
@@ -825,6 +826,7 @@ IL2CPP_EXTERN_C const uint32_t DropdownSample_OnButtonClick_mEAC0F8D33D13DE84DCE
 IL2CPP_EXTERN_C const uint32_t EnvMapAnimator_Awake_mDDD10A405C7152BEFA0ECEA0DCBD061B47C5802E_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnvMapAnimator_Start_m630E0BFAB4D647BC38B99A70F522EF80D25F3C71_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t GrowingIO_DicToObject_mDE5700F9FF6F4A73A0933D882C61731C27EEE232_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t GrowingIO_SetUserAttributes_m578EBD1A3B175BC9A7DEBC69A50A79D6709C62CB_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t GrowingIO_Track_m0C19CA874FF65F9B0BECDAD756C43FA28670B9DB_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t GrowingIO_Track_m50BC77EEA9B955A3091ACE16CF97464BB99BC2DC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t LineSelectionEvent__ctor_mA23AFEC8E11183CF472044FA72B07AD28ED6E675_MetadataUsageId;
@@ -21732,6 +21734,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_Track_m0C19CA874FF65F9B0BECDAD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_TrackPage_mE5609B21148C528F24789965501599CA5FC7AE81 (String_t* ___pageName0, const RuntimeMethod* method);
 // System.Void GrowingIO::TrackPage(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_TrackPage_mBE02880A8794DDA0D514F0D26554245420A5C3B2 (String_t* ___pageName0, Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * ___var1, const RuntimeMethod* method);
+// System.Void GrowingIO::SetUserAttributes(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_SetUserAttributes_m578EBD1A3B175BC9A7DEBC69A50A79D6709C62CB (Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * ___var0, const RuntimeMethod* method);
 // System.Int32 TMPro.TMP_Dropdown::get_value()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TMP_Dropdown_get_value_m505AE9FA106D177AA773F6F2ACD55222C7FF3611 (TMP_Dropdown_t9FB6FD74CE2463D3A4C71A5A2A6FC29162B90353 * __this, const RuntimeMethod* method);
 // System.String System.String::Concat(System.Object[])
@@ -21816,6 +21820,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioTrackWithVariable_m3DDB1CB3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioTrackWithVariableForItemAnditemKey_m2056C0A46F5A14D8F3EE3F4271B978D7F69ECFA9 (String_t* ___eventId0, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___keys1, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___stringValues2, DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* ___numberValues3, int32_t ___count4, String_t* ___itemId5, String_t* ___itemKey6, const RuntimeMethod* method);
 // System.Void GrowingIO::gioTrackPage(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioTrackPage_mF0958A3974048F207106D6B30D77F0900B9C6F53 (String_t* ___pageName0, const RuntimeMethod* method);
+// System.Void GrowingIO::gioSetUserAttributes(System.String[],System.String[],System.Double[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioSetUserAttributes_m9212B0A72FF293E5A3D5C0C868CE9310B4F7FA61 (StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___keys0, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___stringValues1, DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* ___numberValues2, int32_t ___count3, const RuntimeMethod* method);
 // System.Void TMPro.Examples.Benchmark01/<Start>d__10::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__10__ctor_m328932E4B6124311CD738F2F84F69BC149209129 (U3CStartU3Ed__10_t9DEB397698E0A4D729CAE51E4D27693C60088E4F * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method);
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
@@ -22863,6 +22869,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClickEvent_click_Track_Page_String_Dic_m
 		return;
 	}
 }
+// System.Void ClickEvent::click_Set_User_Attributes()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClickEvent_click_Set_User_Attributes_mB9B03E3BC9297DEEDE08D59F36424FA13E66A539 (ClickEvent_t43969E9CE5A01D24AEB394AE30969A372B76EF11 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (ClickEvent_click_Set_User_Attributes_mB9B03E3BC9297DEEDE08D59F36424FA13E66A539_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * V_0 = NULL;
+	{
+		// Dictionary<string, object> dictionary = new Dictionary<string, object> { { "key1", "value1" }, { "key2", 111 }, { "key3", false } };
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_0 = (Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA *)il2cpp_codegen_object_new(Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_mCA7075EA6548A18B929368520217975094841997(L_0, /*hidden argument*/Dictionary_2__ctor_mCA7075EA6548A18B929368520217975094841997_RuntimeMethod_var);
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_1 = L_0;
+		NullCheck(L_1);
+		Dictionary_2_Add_m7D728D0EDA2C18E641EDC8661D0BB9524806D9C4(L_1, _stringLiteral1073AB6CDA4B991CD29F9E83A307F34004AE9327, _stringLiteral8107759ABABCBFA34BCB02BC4309CAF6354982AB, /*hidden argument*/Dictionary_2_Add_m7D728D0EDA2C18E641EDC8661D0BB9524806D9C4_RuntimeMethod_var);
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_2 = L_1;
+		int32_t L_3 = ((int32_t)111);
+		RuntimeObject * L_4 = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &L_3);
+		NullCheck(L_2);
+		Dictionary_2_Add_m7D728D0EDA2C18E641EDC8661D0BB9524806D9C4(L_2, _stringLiteral87BA78E0F03AFCEF60657F342EC5567368FADD8C, L_4, /*hidden argument*/Dictionary_2_Add_m7D728D0EDA2C18E641EDC8661D0BB9524806D9C4_RuntimeMethod_var);
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_5 = L_2;
+		bool L_6 = ((bool)0);
+		RuntimeObject * L_7 = Box(Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_TypeInfo_var, &L_6);
+		NullCheck(L_5);
+		Dictionary_2_Add_m7D728D0EDA2C18E641EDC8661D0BB9524806D9C4(L_5, _stringLiteral3B88EA816C78EC104041A75E78F32EC804EAAC39, L_7, /*hidden argument*/Dictionary_2_Add_m7D728D0EDA2C18E641EDC8661D0BB9524806D9C4_RuntimeMethod_var);
+		V_0 = L_5;
+		// GrowingIO.SetUserAttributes(dictionary);
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_8 = V_0;
+		GrowingIO_SetUserAttributes_m578EBD1A3B175BC9A7DEBC69A50A79D6709C62CB(L_8, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
 // System.Void ClickEvent::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClickEvent__ctor_mABB3E3AE3D2A2E76A955B082A2B76AD2D3C99842 (ClickEvent_t43969E9CE5A01D24AEB394AE30969A372B76EF11 * __this, const RuntimeMethod* method)
 {
@@ -23445,6 +23486,83 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioTrackPage_mF0958A3974048F20
 	// Marshaling cleanup of parameter '___pageName0' native representation
 	il2cpp_codegen_marshal_free(____pageName0_marshaled);
 	____pageName0_marshaled = NULL;
+
+}
+IL2CPP_EXTERN_C void DEFAULT_CALL gioSetUserAttributes(char**, char**, double*, int32_t);
+// System.Void GrowingIO::gioSetUserAttributes(System.String[],System.String[],System.Double[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioSetUserAttributes_m9212B0A72FF293E5A3D5C0C868CE9310B4F7FA61 (StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___keys0, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___stringValues1, DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* ___numberValues2, int32_t ___count3, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (char**, char**, double*, int32_t);
+
+	// Marshaling of parameter '___keys0' to native representation
+	char** ____keys0_marshaled = NULL;
+	if (___keys0 != NULL)
+	{
+		il2cpp_array_size_t ____keys0_Length = (___keys0)->max_length;
+		____keys0_marshaled = il2cpp_codegen_marshal_allocate_array<char*>(____keys0_Length + 1);
+		(____keys0_marshaled)[____keys0_Length] = NULL;
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(____keys0_Length); i++)
+		{
+			(____keys0_marshaled)[i] = il2cpp_codegen_marshal_string((___keys0)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i)));
+		}
+	}
+	else
+	{
+		____keys0_marshaled = NULL;
+	}
+
+	// Marshaling of parameter '___stringValues1' to native representation
+	char** ____stringValues1_marshaled = NULL;
+	if (___stringValues1 != NULL)
+	{
+		il2cpp_array_size_t ____stringValues1_Length = (___stringValues1)->max_length;
+		____stringValues1_marshaled = il2cpp_codegen_marshal_allocate_array<char*>(____stringValues1_Length + 1);
+		(____stringValues1_marshaled)[____stringValues1_Length] = NULL;
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(____stringValues1_Length); i++)
+		{
+			(____stringValues1_marshaled)[i] = il2cpp_codegen_marshal_string((___stringValues1)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i)));
+		}
+	}
+	else
+	{
+		____stringValues1_marshaled = NULL;
+	}
+
+	// Marshaling of parameter '___numberValues2' to native representation
+	double* ____numberValues2_marshaled = NULL;
+	if (___numberValues2 != NULL)
+	{
+		____numberValues2_marshaled = reinterpret_cast<double*>((___numberValues2)->GetAddressAtUnchecked(0));
+	}
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(gioSetUserAttributes)(____keys0_marshaled, ____stringValues1_marshaled, ____numberValues2_marshaled, ___count3);
+
+	// Marshaling cleanup of parameter '___keys0' native representation
+	if (____keys0_marshaled != NULL)
+	{
+		const il2cpp_array_size_t ____keys0_marshaled_CleanupLoopCount = (___keys0 != NULL) ? (___keys0)->max_length : 0;
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(____keys0_marshaled_CleanupLoopCount); i++)
+		{
+			il2cpp_codegen_marshal_free((____keys0_marshaled)[i]);
+			(____keys0_marshaled)[i] = NULL;
+		}
+		il2cpp_codegen_marshal_free(____keys0_marshaled);
+		____keys0_marshaled = NULL;
+	}
+
+	// Marshaling cleanup of parameter '___stringValues1' native representation
+	if (____stringValues1_marshaled != NULL)
+	{
+		const il2cpp_array_size_t ____stringValues1_marshaled_CleanupLoopCount = (___stringValues1 != NULL) ? (___stringValues1)->max_length : 0;
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(____stringValues1_marshaled_CleanupLoopCount); i++)
+		{
+			il2cpp_codegen_marshal_free((____stringValues1_marshaled)[i]);
+			(____stringValues1_marshaled)[i] = NULL;
+		}
+		il2cpp_codegen_marshal_free(____stringValues1_marshaled);
+		____stringValues1_marshaled = NULL;
+	}
 
 }
 // GrowingIO_GIOIOSObject GrowingIO::DicToObject(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
@@ -24128,6 +24246,107 @@ IL_0016:
 	}
 
 IL_0023:
+	{
+		// }
+		return;
+	}
+}
+// System.Void GrowingIO::SetUserAttributes(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_SetUserAttributes_m578EBD1A3B175BC9A7DEBC69A50A79D6709C62CB (Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * ___var0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GrowingIO_SetUserAttributes_m578EBD1A3B175BC9A7DEBC69A50A79D6709C62CB_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t G_B3_0 = 0;
+	int32_t G_B7_0 = 0;
+	{
+		// if (Application.platform != RuntimePlatform.OSXEditor && Application.platform != RuntimePlatform.WindowsEditor)
+		int32_t L_0 = Application_get_platform_m6AFFFF3B077F4D5CA1F71CF14ABA86A83FC71672(/*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		int32_t L_1 = Application_get_platform_m6AFFFF3B077F4D5CA1F71CF14ABA86A83FC71672(/*hidden argument*/NULL);
+		G_B3_0 = ((((int32_t)((((int32_t)L_1) == ((int32_t)7))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_0016;
+	}
+
+IL_0015:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0016:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		// if (var != null && var.Count > 0) {
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_3 = ___var0;
+		if (!L_3)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_4 = ___var0;
+		NullCheck(L_4);
+		int32_t L_5 = Dictionary_2_get_Count_mB6E0E1F3612DDACA97A35D66CDE84B305F1B64C9(L_4, /*hidden argument*/Dictionary_2_get_Count_mB6E0E1F3612DDACA97A35D66CDE84B305F1B64C9_RuntimeMethod_var);
+		G_B7_0 = ((((int32_t)L_5) > ((int32_t)0))? 1 : 0);
+		goto IL_002a;
+	}
+
+IL_0029:
+	{
+		G_B7_0 = 0;
+	}
+
+IL_002a:
+	{
+		V_1 = (bool)G_B7_0;
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		// gioSetUserAttributes(DicToObject(var).keys, DicToObject(var).values, DicToObject(var).numbers, var.Count);
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_7 = ___var0;
+		GIOIOSObject_t98AFCD93C0FF64447FB8670CCBC5AF5D01AEBB2F * L_8 = GrowingIO_DicToObject_mDE5700F9FF6F4A73A0933D882C61731C27EEE232(L_7, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_9 = L_8->get_keys_0();
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_10 = ___var0;
+		GIOIOSObject_t98AFCD93C0FF64447FB8670CCBC5AF5D01AEBB2F * L_11 = GrowingIO_DicToObject_mDE5700F9FF6F4A73A0933D882C61731C27EEE232(L_10, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_12 = L_11->get_values_1();
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_13 = ___var0;
+		GIOIOSObject_t98AFCD93C0FF64447FB8670CCBC5AF5D01AEBB2F * L_14 = GrowingIO_DicToObject_mDE5700F9FF6F4A73A0933D882C61731C27EEE232(L_13, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* L_15 = L_14->get_numbers_2();
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_16 = ___var0;
+		NullCheck(L_16);
+		int32_t L_17 = Dictionary_2_get_Count_mB6E0E1F3612DDACA97A35D66CDE84B305F1B64C9(L_16, /*hidden argument*/Dictionary_2_get_Count_mB6E0E1F3612DDACA97A35D66CDE84B305F1B64C9_RuntimeMethod_var);
+		GrowingIO_gioSetUserAttributes_m9212B0A72FF293E5A3D5C0C868CE9310B4F7FA61(L_9, L_12, L_15, L_17, /*hidden argument*/NULL);
+	}
+
+IL_005d:
+	{
+	}
+
+IL_005e:
 	{
 		// }
 		return;

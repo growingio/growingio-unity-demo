@@ -89,4 +89,17 @@ public class GrowingIOHelper {
             }
         });
     }
+
+    public static void setUserAttributes(final HashMap var) {
+        LogUtil.d(TAG, "setUserAttributes: var = " + var);
+        if (var == null || var.isEmpty()) {
+            return;
+        }
+        ThreadUtils.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                GrowingIO.getInstance().setUserAttributes(new JSONObject(var));
+            }
+        });
+    }
 }

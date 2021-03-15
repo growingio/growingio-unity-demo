@@ -45,4 +45,10 @@ public class ClickEvent : MonoBehaviour
         Dictionary<string, object> dictionary = new Dictionary<string, object> { { "key1", "value1" }, { "key2", 111 }, { "key3", false } };
         GrowingIO.TrackPage("TrackPageStringDic", dictionary);
     }
+
+    public void click_Set_User_Attributes()
+    {
+        Dictionary<string, object> dictionary = new Dictionary<string, object> { { "key1", "value1" }, { "key2", 111 }, { "key3", false } };
+        GrowingIO.SetUserAttributes(dictionary);
+    }
 }

@@ -53,6 +53,10 @@ extern "C" {
         [Growing trackPage:gioCreateNSString(pageName)];
     }
 
+    void gioSetUserAttributes(const char *keys[], const char *stringValues[], double numberValues[], int count) {
+        [Growing setUserAttributes:gioCreateDiction(keys, stringValues, numberValues, count)];
+    }
+
 #pragma GCC diagnostic warning "-Wmissing-prototypes"
     
 }

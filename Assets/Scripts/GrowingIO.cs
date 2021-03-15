@@ -64,6 +64,9 @@ public class GrowingIO
     [DllImport("__Internal")]
     private static extern void gioTrackPage(string pageName);
 
+    [DllImport("__Internal")]
+    private static extern void gioSetUserAttributes(string[] keys, string[] stringValues, double[] numberValues, int count);
+
     private class GIOIOSObject {
         public string[] keys;
         public string[] values;
@@ -191,6 +194,21 @@ public class GrowingIO
 #endif
 #if UNITY_ANDROID
             new AndroidJavaClass(ANDROID_CLASS).CallStatic("trackPage", pageName, DicToMap(var));
+#endif
+        }
+    }
+
+    public static void SetUserAttributes(Dictionary<string, object> var)
+    {
+        if (Application.platform != RuntimePlatform.OSXEditor && Application.platform != RuntimePlatform.WindowsEditor)
+        {
+#if UNITY_IPHONE
+        	if (var != null && var.Count > 0) {
+            	gioSetUserAttributes(DicToObject(var).keys, DicToObject(var).values, DicToObject(var).numbers, var.Count);
+        	}
+#endif
+#if UNITY_ANDROID
+            new AndroidJavaClass(ANDROID_CLASS).CallStatic("setUserAttributes", DicToMap(var));
 #endif
         }
     }
