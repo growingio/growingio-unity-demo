@@ -203,8 +203,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 786270577}
-        m_MethodName: 
+      - m_Target: {fileID: 786270582}
+        m_MethodName: click_Track_String
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 786270582}
         m_MethodName: click_Track_String_Dic_String_String
         m_Mode: 1
         m_Arguments:
@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 786270582}
         m_MethodName: click_Track_Page_String
         m_Mode: 1
         m_Arguments:
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 786270582}
         m_MethodName: click_Track_Page_String_Dic
         m_Mode: 1
         m_Arguments:
@@ -1393,7 +1393,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 786270582}
         m_MethodName: click_Track_String_Dic
         m_Mode: 1
         m_Arguments:
@@ -1523,7 +1523,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 786270582}
         m_MethodName: click_Set_User_Id
         m_Mode: 1
         m_Arguments:
@@ -1653,7 +1653,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 786270582}
         m_MethodName: click_Clear_User_Id
         m_Mode: 1
         m_Arguments:
@@ -1927,12 +1927,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 786270577}
-        m_MethodName: 
+      - m_Target: {fileID: 786270582}
+        m_MethodName: click_Set_User_Attributes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
