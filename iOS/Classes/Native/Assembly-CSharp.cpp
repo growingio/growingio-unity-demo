@@ -827,6 +827,7 @@ IL2CPP_EXTERN_C const uint32_t EnvMapAnimator_Awake_mDDD10A405C7152BEFA0ECEA0DCB
 IL2CPP_EXTERN_C const uint32_t EnvMapAnimator_Start_m630E0BFAB4D647BC38B99A70F522EF80D25F3C71_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t GrowingIO_DicToObject_mDE5700F9FF6F4A73A0933D882C61731C27EEE232_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t GrowingIO_SetUserAttributes_m578EBD1A3B175BC9A7DEBC69A50A79D6709C62CB_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t GrowingIO_TrackPage_mBE02880A8794DDA0D514F0D26554245420A5C3B2_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t GrowingIO_Track_m0C19CA874FF65F9B0BECDAD756C43FA28670B9DB_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t GrowingIO_Track_m50BC77EEA9B955A3091ACE16CF97464BB99BC2DC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t LineSelectionEvent__ctor_mA23AFEC8E11183CF472044FA72B07AD28ED6E675_MetadataUsageId;
@@ -21820,6 +21821,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioTrackWithVariable_m3DDB1CB3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioTrackWithVariableForItemAnditemKey_m2056C0A46F5A14D8F3EE3F4271B978D7F69ECFA9 (String_t* ___eventId0, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___keys1, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___stringValues2, DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* ___numberValues3, int32_t ___count4, String_t* ___itemId5, String_t* ___itemKey6, const RuntimeMethod* method);
 // System.Void GrowingIO::gioTrackPage(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioTrackPage_mF0958A3974048F207106D6B30D77F0900B9C6F53 (String_t* ___pageName0, const RuntimeMethod* method);
+// System.Void GrowingIO::gioTrackPageWithVariable(System.String,System.String[],System.String[],System.Double[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioTrackPageWithVariable_m646182D3C4EBDCED6895850266641D489FF9BE89 (String_t* ___pageName0, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___keys1, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___stringValues2, DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* ___numberValues3, int32_t ___count4, const RuntimeMethod* method);
 // System.Void GrowingIO::gioSetUserAttributes(System.String[],System.String[],System.Double[],System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioSetUserAttributes_m9212B0A72FF293E5A3D5C0C868CE9310B4F7FA61 (StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___keys0, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___stringValues1, DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* ___numberValues2, int32_t ___count3, const RuntimeMethod* method);
 // System.Void TMPro.Examples.Benchmark01/<Start>d__10::.ctor(System.Int32)
@@ -23488,6 +23491,91 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioTrackPage_mF0958A3974048F20
 	____pageName0_marshaled = NULL;
 
 }
+IL2CPP_EXTERN_C void DEFAULT_CALL gioTrackPageWithVariable(char*, char**, char**, double*, int32_t);
+// System.Void GrowingIO::gioTrackPageWithVariable(System.String,System.String[],System.String[],System.Double[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioTrackPageWithVariable_m646182D3C4EBDCED6895850266641D489FF9BE89 (String_t* ___pageName0, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___keys1, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___stringValues2, DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* ___numberValues3, int32_t ___count4, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (char*, char**, char**, double*, int32_t);
+
+	// Marshaling of parameter '___pageName0' to native representation
+	char* ____pageName0_marshaled = NULL;
+	____pageName0_marshaled = il2cpp_codegen_marshal_string(___pageName0);
+
+	// Marshaling of parameter '___keys1' to native representation
+	char** ____keys1_marshaled = NULL;
+	if (___keys1 != NULL)
+	{
+		il2cpp_array_size_t ____keys1_Length = (___keys1)->max_length;
+		____keys1_marshaled = il2cpp_codegen_marshal_allocate_array<char*>(____keys1_Length + 1);
+		(____keys1_marshaled)[____keys1_Length] = NULL;
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(____keys1_Length); i++)
+		{
+			(____keys1_marshaled)[i] = il2cpp_codegen_marshal_string((___keys1)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i)));
+		}
+	}
+	else
+	{
+		____keys1_marshaled = NULL;
+	}
+
+	// Marshaling of parameter '___stringValues2' to native representation
+	char** ____stringValues2_marshaled = NULL;
+	if (___stringValues2 != NULL)
+	{
+		il2cpp_array_size_t ____stringValues2_Length = (___stringValues2)->max_length;
+		____stringValues2_marshaled = il2cpp_codegen_marshal_allocate_array<char*>(____stringValues2_Length + 1);
+		(____stringValues2_marshaled)[____stringValues2_Length] = NULL;
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(____stringValues2_Length); i++)
+		{
+			(____stringValues2_marshaled)[i] = il2cpp_codegen_marshal_string((___stringValues2)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i)));
+		}
+	}
+	else
+	{
+		____stringValues2_marshaled = NULL;
+	}
+
+	// Marshaling of parameter '___numberValues3' to native representation
+	double* ____numberValues3_marshaled = NULL;
+	if (___numberValues3 != NULL)
+	{
+		____numberValues3_marshaled = reinterpret_cast<double*>((___numberValues3)->GetAddressAtUnchecked(0));
+	}
+
+	// Native function invocation
+	reinterpret_cast<PInvokeFunc>(gioTrackPageWithVariable)(____pageName0_marshaled, ____keys1_marshaled, ____stringValues2_marshaled, ____numberValues3_marshaled, ___count4);
+
+	// Marshaling cleanup of parameter '___pageName0' native representation
+	il2cpp_codegen_marshal_free(____pageName0_marshaled);
+	____pageName0_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___keys1' native representation
+	if (____keys1_marshaled != NULL)
+	{
+		const il2cpp_array_size_t ____keys1_marshaled_CleanupLoopCount = (___keys1 != NULL) ? (___keys1)->max_length : 0;
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(____keys1_marshaled_CleanupLoopCount); i++)
+		{
+			il2cpp_codegen_marshal_free((____keys1_marshaled)[i]);
+			(____keys1_marshaled)[i] = NULL;
+		}
+		il2cpp_codegen_marshal_free(____keys1_marshaled);
+		____keys1_marshaled = NULL;
+	}
+
+	// Marshaling cleanup of parameter '___stringValues2' native representation
+	if (____stringValues2_marshaled != NULL)
+	{
+		const il2cpp_array_size_t ____stringValues2_marshaled_CleanupLoopCount = (___stringValues2 != NULL) ? (___stringValues2)->max_length : 0;
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(____stringValues2_marshaled_CleanupLoopCount); i++)
+		{
+			il2cpp_codegen_marshal_free((____stringValues2_marshaled)[i]);
+			(____stringValues2_marshaled)[i] = NULL;
+		}
+		il2cpp_codegen_marshal_free(____stringValues2_marshaled);
+		____stringValues2_marshaled = NULL;
+	}
+
+}
 IL2CPP_EXTERN_C void DEFAULT_CALL gioSetUserAttributes(char**, char**, double*, int32_t);
 // System.Void GrowingIO::gioSetUserAttributes(System.String[],System.String[],System.Double[],System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_gioSetUserAttributes_m9212B0A72FF293E5A3D5C0C868CE9310B4F7FA61 (StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___keys0, StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* ___stringValues1, DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* ___numberValues2, int32_t ___count3, const RuntimeMethod* method)
@@ -24209,6 +24297,12 @@ IL_0024:
 // System.Void GrowingIO::TrackPage(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrowingIO_TrackPage_mBE02880A8794DDA0D514F0D26554245420A5C3B2 (String_t* ___pageName0, Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * ___var1, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (GrowingIO_TrackPage_mBE02880A8794DDA0D514F0D26554245420A5C3B2_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
 	bool V_0 = false;
 	int32_t G_B3_0 = 0;
 	{
@@ -24236,16 +24330,31 @@ IL_0016:
 		bool L_2 = V_0;
 		if (!L_2)
 		{
-			goto IL_0023;
+			goto IL_004a;
 		}
 	}
 	{
-		// gioTrackPage(pageName);
+		// gioTrackPageWithVariable(pageName, DicToObject(var).keys, DicToObject(var).values, DicToObject(var).numbers, var.Count);
 		String_t* L_3 = ___pageName0;
-		GrowingIO_gioTrackPage_mF0958A3974048F207106D6B30D77F0900B9C6F53(L_3, /*hidden argument*/NULL);
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_4 = ___var1;
+		GIOIOSObject_t98AFCD93C0FF64447FB8670CCBC5AF5D01AEBB2F * L_5 = GrowingIO_DicToObject_mDE5700F9FF6F4A73A0933D882C61731C27EEE232(L_4, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_6 = L_5->get_keys_0();
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_7 = ___var1;
+		GIOIOSObject_t98AFCD93C0FF64447FB8670CCBC5AF5D01AEBB2F * L_8 = GrowingIO_DicToObject_mDE5700F9FF6F4A73A0933D882C61731C27EEE232(L_7, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		StringU5BU5D_t933FB07893230EA91C40FF900D5400665E87B14E* L_9 = L_8->get_values_1();
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_10 = ___var1;
+		GIOIOSObject_t98AFCD93C0FF64447FB8670CCBC5AF5D01AEBB2F * L_11 = GrowingIO_DicToObject_mDE5700F9FF6F4A73A0933D882C61731C27EEE232(L_10, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		DoubleU5BU5D_tF9383437DDA9EAC9F60627E9E6E2045CF7CB182D* L_12 = L_11->get_numbers_2();
+		Dictionary_2_t9140A71329927AE4FD0F3CF4D4D66668EBE151EA * L_13 = ___var1;
+		NullCheck(L_13);
+		int32_t L_14 = Dictionary_2_get_Count_mB6E0E1F3612DDACA97A35D66CDE84B305F1B64C9(L_13, /*hidden argument*/Dictionary_2_get_Count_mB6E0E1F3612DDACA97A35D66CDE84B305F1B64C9_RuntimeMethod_var);
+		GrowingIO_gioTrackPageWithVariable_m646182D3C4EBDCED6895850266641D489FF9BE89(L_3, L_6, L_9, L_12, L_14, /*hidden argument*/NULL);
 	}
 
-IL_0023:
+IL_004a:
 	{
 		// }
 		return;

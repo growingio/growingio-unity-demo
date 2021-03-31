@@ -53,6 +53,10 @@ extern "C" {
         [Growing trackPage:gioCreateNSString(pageName)];
     }
 
+    void gioTrackPageWithVariable(const char *pageName, const char *keys[], const char *stringValues[], double numberValues[], int count) {
+        [Growing trackPage:gioCreateNSString(pageName) withVariable:gioCreateDiction(keys, stringValues, numberValues, count)];
+    }
+
     void gioSetUserAttributes(const char *keys[], const char *stringValues[], double numberValues[], int count) {
         [Growing setUserAttributes:gioCreateDiction(keys, stringValues, numberValues, count)];
     }

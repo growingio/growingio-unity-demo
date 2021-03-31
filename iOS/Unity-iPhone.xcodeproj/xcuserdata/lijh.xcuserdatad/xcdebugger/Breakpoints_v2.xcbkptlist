@@ -39,7 +39,23 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2893AB38-B479-4A5D-8EA7-E27A81FC8F96"
+            uuid = "FDB0B96F-2A1A-434D-AE6C-E823379E1E40"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Libraries/Plugins/iOS/GrowingIOHelper.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "gioTrackPage(pageName)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8065C01-E094-4FB9-86D4-DAF718B4EC5E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -48,7 +64,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
             endingLineNumber = "57"
-            landmarkName = "gioSetUserAttributes(keys, stringValues, numberValues, count)"
+            landmarkName = "gioTrackPageWithVariable(pageName, keys, stringValues, numberValues, count)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
